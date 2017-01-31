@@ -22,7 +22,7 @@ html {
   /* 1 */
   -ms-text-size-adjust: 100%;
   /* 2 */
-  -webkit-text-size-adjust: 100%
+  -webkit-text-size-adjust: 100%;
   /* 2 */
 }
 
@@ -104,7 +104,7 @@ template,
 a {
   background-color: transparent;
   /* 1 */
-  -webkit-text-decoration-skip: objects
+  -webkit-text-decoration-skip: objects;
   /* 2 */
 }
 
@@ -128,7 +128,7 @@ abbr[title] {
   /* 1 */
   text-decoration: underline;
   /* 2 */
-  text-decoration: underline dotted
+  text-decoration: underline dotted;
   /* 2 */
 }
 
@@ -232,7 +232,7 @@ pre,
 samp {
   font-size: 1em;
   /* 2 */
-  font-family: monospace, monospace
+  font-family: monospace, monospace;
   /* 1 */
 }
 
@@ -252,7 +252,7 @@ hr {
   /* 2 */
   box-sizing: content-box;
   /* 1 */
-  height: 0
+  height: 0;
   /* 1 */
 }
 
@@ -269,7 +269,7 @@ textarea {
   margin: 0;
   /* 2 */
   max-width: 100%;
-  font: inherit
+  font: inherit;
   /* 1 */
 }
 
@@ -311,7 +311,7 @@ html [type="button"],
 [type="submit"] {
   font-size: inherit;
   font-family: inherit;
-  -webkit-appearance: none
+  -webkit-appearance: none;
   /* 2 */
 }
 
@@ -390,7 +390,6 @@ input[type="submit"], input[type="reset"], input[type="button"] {
   min-width: 3.2em;
   border: #AAA 1px solid;
   border-radius: 4px;
-  background: -webkit-linear-gradient(#fafafa 0%, #d6d6d6 100%);
   background: linear-gradient(#fafafa 0%, #d6d6d6 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fafafa', endColorstr='#d6d6d6',GradientType=0 );
 }
@@ -445,7 +444,7 @@ legend {
   /* 1 */
   color: inherit;
   /* 2 */
-  white-space: normal
+  white-space: normal;
   /* 1 */
 }
 
@@ -464,7 +463,7 @@ textarea {
 [type="radio"] {
   box-sizing: border-box;
   /* 1 */
-  padding: 0
+  padding: 0;
   /* 2 */
 }
 
@@ -2233,15 +2232,10 @@ nav, nav ul, nav li {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: stretch;
-  -webkit-align-items: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
+  align-items: stretch;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-          flex-direction: row;
+  flex-direction: row;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -2254,15 +2248,10 @@ nav, nav ul, nav li {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: stretch;
-  -webkit-align-items: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
+  align-items: stretch;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-          flex-direction: row;
+  flex-direction: row;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -2275,15 +2264,10 @@ nav, nav ul, nav li {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: stretch;
-  -webkit-align-items: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
+  align-items: stretch;
   -webkit-flex-direction: row-reverse;
   -ms-flex-direction: row-reverse;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-          flex-direction: row-reverse;
+  flex-direction: row-reverse;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -2296,15 +2280,10 @@ nav, nav ul, nav li {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: stretch;
-  -webkit-align-items: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
+  align-items: stretch;
   -webkit-flex-direction: row-reverse;
   -ms-flex-direction: row-reverse;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-          flex-direction: row-reverse;
+  flex-direction: row-reverse;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -2315,33 +2294,17 @@ nav, nav ul, nav li {
 .flex-sp-eq {
   display: -webkit-box;
   display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: stretch;
-  -webkit-align-items: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
+  align-items: stretch;
   -webkit-flex-direction: row;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  flex-wrap: nowrap;
   -webkit-flex-grow: 1;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  -webkit-flex-shrink: 1;
-      -ms-flex-negative: 1;
-          flex-shrink: 1;
-  -webkit-flex-basis: 100%;
-      -ms-flex-preferred-size: 100%;
-          flex-basis: 100%;
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 100%;
+  justify-content: space-around;
   width: 100%;
 }
 .flex-sp-eq > * {
@@ -2351,24 +2314,14 @@ nav, nav ul, nav li {
 .flex-tab-eq, .flex-pc-eq {
   display: -webkit-box;
   display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: stretch;
-  -webkit-align-items: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
+  align-items: stretch;
   -webkit-flex-direction: column;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  flex-wrap: nowrap;
   -webkit-flex-grow: 1;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  flex-grow: 1;
   width: 100%;
 }
 .flex-tab-eq > *, .flex-pc-eq > * {
@@ -2383,10 +2336,7 @@ nav, nav ul, nav li {
 
   .flex-tab-eq {
     -webkit-flex-direction: row;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
   }
 }
 @media screen and (min-width: 769px) {
@@ -2397,10 +2347,7 @@ nav, nav ul, nav li {
 
   .flex-pc-eq {
     -webkit-flex-direction: row;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
   }
 }
 .wp-caption p.wp-caption-text {
